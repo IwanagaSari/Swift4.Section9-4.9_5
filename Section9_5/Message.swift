@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class Message {
+    
+    final func hello() { //他のクラスでオーバーライドできなくなる。継承はできる。
+        print("ハロー")
+    }
+}

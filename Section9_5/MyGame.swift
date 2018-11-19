@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+class MyGame:GameProtocol {
+    private var total = 0
+    
+    var gamePoint: Int{
+        get {
+            return total
+        }
+    }
+    
+    func hit() {
+        total += 10
+        print("ヒットしました。　+10")
+    }
+    func miss() {
+        total /= 2
+        print("ミスった！半減")
+    }
+}

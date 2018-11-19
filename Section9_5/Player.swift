@@ -7,3 +7,27 @@
 //
 
 import Foundation
+// Section9_6  p.219
+class Player {
+    var name: String =  ""
+    
+    func hello() {
+        print("やあ！" + name )
+    }
+    
+}
+
+extension Player {
+    var who:String {
+        get{
+            return name
+        }
+        set(value){
+            name = value
+        }
+    }
+    
+    func bye(){
+        print("またね！" + name)
+    }
+}

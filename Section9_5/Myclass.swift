@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class Myclass {
+    //クラスプロパティ
+    static var radian:Double = 0.0
+    
+    class var degree:Double {
+        get {
+            let dosu = radian * 90/Double.pi
+            return dosu
+        }
+        set (dosu) {
+            radian = dosu * Double.pi/90
+        }
+    }
+}
